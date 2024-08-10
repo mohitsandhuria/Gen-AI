@@ -15,7 +15,6 @@ os.environ["LANGCHAIN_TRACING_V2"]="true"
 os.environ["LANGCHAIN_PROJECT"]="Q&A Chatbot With OPEN AI"
 
 # Prompt Template
-
 prompt=ChatPromptTemplate.from_messages(
     [("system","You are a helpful assistant. Please respond to the user queries beyond knowledge."),
      ("user","Question: {question}")]
